@@ -1,0 +1,292 @@
+
+/* Index  */
+body {
+    position: relative;
+}
+
+header {
+    display: flex;
+    height: 50px;
+    width:100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color:coral;
+    position: fixed;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px; 
+    /* padding-right:15px;   */
+}
+
+nav ul  {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;  
+}
+
+ul li{
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+    list-style: none;
+    background-color: #ffffff;
+    padding: 3px;
+    border-radius: 20px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: blue;
+}
+
+nav ul li a:hover {
+    color:black;
+    font-weight: bolder;    
+}
+nav li:hover  {
+    background-color:rgba(173, 216, 230, 0);
+    
+}
+
+@media (min-width:700px){
+    header nav ul {
+        justify-content:space-evenly 
+    }
+    nav{
+        width: 70%;
+        padding-inline: 1rem;
+    }
+}
+
+
+/* HOME PAGE */
+.index {
+    padding-top: 50px;
+}
+
+ol {
+    margin-left: 7px;
+}
+
+.list1 {
+    color: rgb(226, 3, 250);
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+.list2 {
+    color: black;
+    font-style: italic;
+    font-size: large;
+
+}
+
+.contact_index {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (min-width:1050px){ 
+    .img_index {
+        position: absolute;
+        right: 190px;
+        top: 60px;
+    }
+    .contact_index {
+        display:inline-flex;
+        gap: 50px;
+        padding-top: 100px;
+    }
+}
+
+@media (min-width:800px){
+    .index {
+        padding-left: 50px;
+    }  
+}
+
+
+/* ABOUT PAGE */
+#about {
+    padding-top: 50px; 
+    padding-left: 10px;
+    background-color: whitesmoke;
+}
+
+h3{
+    color: rgba(255, 0, 208, 1);
+    font-style: italic;
+}
+
+h5 {
+    color: red;
+    font-weight: bolder;
+}
+@media (min-width:800px){
+    #about {
+        padding-left: 50px;
+    }
+}
+
+
+
+
+/* CONTACT PAGE */
+.contact {
+    padding-top: 50px; 
+    background-color: whitesmoke;
+}
+
+.bi-whatsapp {
+    color: red;
+    font-size: 40px;
+}
+
+.bi-facebook {
+    color: blue;
+    font-size: 40px;
+}
+
+.bi-linkedin {
+    color: rgb(0, 255, 0);
+    font-size: 50px;
+}
+
+.bi-telephone-inbound-fill {
+    color: rgba(30, 164, 30, 0.653);
+    font-size: 40px;
+}
+
+.bi-twitter {
+    color: blue;
+    font-size: 40px; 
+}
+
+.bi-envelope {
+    color:magenta;
+    font-size: 40px; 
+}
+
+@media (min-width:800px){
+    .contact-icons {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;  
+    }
+}
+
+@media (max-width:800px){
+    .contact-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+
+/* EXPERIENCE PAGE */
+.experience {
+    padding-top: 50px; 
+    background-color: whitesmoke;
+    padding-left: 15px;
+}
+
+div caption {
+    color: red;
+}
+
+.imges_experience {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 50px;
+}
+
+.img_img1 {
+    display: flex;
+    flex-direction: column; 
+}
+
+#img_caption {
+    color: blue;
+}
+
+@media (min-width:800px){
+    .imges_experience {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (min-width:800px){
+    .experience {
+        padding-left: 50px;
+    }
+}
+
+/* PROJECTS PAGE */
+.projects {
+    padding-top: 50px;
+    background-color: whitesmoke;
+    padding-left: 15px;
+}
+
+.img_projects {
+    height: 250px;
+    width: 350px;
+    margin-top: 30px;
+    margin-left: 15px;
+    border: 1.5px solid;
+}
+
+h4 {
+    color:blue;
+}
+
+span {
+    color:deeppink;
+    font-style: italic;
+}
+
+@media (min-width:800px){
+    .projects {
+        padding-left: 50px;
+    }
+}
+
+
+/* SKILLS PAGE */
+#skills {
+    padding-top: 50px;
+    background-color: whitesmoke;
+}
+
+.image_skills {
+    height: 600px;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.img2_skills{
+    padding-left: 100px;
+}
+
+@media (min-width:600px){
+    .image_skills {
+        display: flex;
+    }
+}
+
+@media (min-width:800px){
+    #skills {
+        padding-left: 50px;
+    }
+}
